@@ -15,8 +15,12 @@ export default function Project({
   link?: string;
 }) {
   return (
-    <section className="px-2 py-3 bg-neutral-950 outline outline-neutral-800 outline-1 rounded-xl flex flex-row relative my-2 hover:scale-[101%] hover:outline-white transition-all duration-200">
-      <img className="rounded-xl invisible h-0 md:visible md:h-32" src={img}></img>
+    <section className="px-2 py-3 bg-neutral-950 outline outline-neutral-800 outline-1 rounded-xl flex flex-row relative my-2 hover:scale-[101%] hover:outline-neutral-600 transition-all duration-200">
+      <img
+        alt={title}
+        className="rounded-xl invisible h-0 md:visible md:h-32"
+        src={img}
+      ></img>
       <div className="flex flex-col px-3">
         <h1 className="text-xl text-left">{title}</h1>
         <p className="text-sm text-left">{desc}</p>
@@ -37,7 +41,7 @@ export default function Project({
         <a
           target="_blank"
           href={link}
-          className="px-2 py-1 bg-purple-800 right-2 bottom-2 absolute rounded-xl hover:scale-105 active:scale-110 transition-all duration-75"
+          className="p-1 bg-purple-800 right-2 bottom-2 absolute rounded-full hover:scale-105 active:scale-110 transition-all duration-75"
         >
           🔗
         </a>
