@@ -23,7 +23,7 @@ export default function Project({
       ></img>
       <div className="flex flex-col px-3">
         <h1 className="text-xl text-left">{title}</h1>
-        <p className="text-sm text-left">{desc}</p>
+        <p className="text-sm text-left text-neutral-500 mb-1">{desc}</p>
         <div className="grid grid-cols-2 md:grid-cols-3 mt-1">
           {techs.map((tech) => {
             const color = COLORS[tech.toLowerCase()];
