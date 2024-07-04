@@ -12,6 +12,7 @@ import ticTac from "./images/tic-tac-toe.png";
 import userTable from "./images/user-table.png";
 import sodaApi from "./images/soda-api.png";
 import Experience from "./components/Experience";
+import AuthApp from "./images/AuthApp.png";
 
 function App() {
   return (
@@ -114,13 +115,29 @@ function App() {
         <h3 className="text-2xl font-bold text-left mb-2 text-purple-900">Skills</h3>
         <section className="py-2 grid grid-cols-5 md:grid-cols-12 gap-x-10 mx-auto w-[20rem] ">
           {SVGS.Node} {SVGS.React} {SVGS.Tailwind} {SVGS.Html} {SVGS.JavaScript}
-          {SVGS.TypeScript} {SVGS.MySQL} {SVGS.Express}
+          {SVGS.TypeScript} {SVGS.MySQL} {SVGS.Express} {SVGS.Turso}
         </section>
       </Section>
       <Section>
         <h1 className="text-3xl font-bold text-left mb-2 text-purple-700">
           Projects
         </h1>
+
+        <div className="bg-red-500 px-5 py-2 rounded-xl outline outline-2 outline-red-600">
+          <h1 className="text-2xl font-bold text-left">Warning</h1>
+          <p className="text-left">
+            Some of the apps with backend may take a while to load, because the API
+            needs to be activated again since I have a free plan
+          </p>
+        </div>
+
+        <Project
+          title="Auth APP with data base and settings"
+          desc="App with email verification with a code or with a link. (MAY TAKE A WHILE TO LOAD)"
+          techs={["React", "Tailwind", "TS", "Turso", "Node", "Express"]}
+          img={AuthApp}
+          link="https://satixx-auth.vercel.app/login"
+        ></Project>
 
         <Project
           title="Soda API"

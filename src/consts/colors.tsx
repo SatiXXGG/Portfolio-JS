@@ -9,4 +9,5 @@ export const COLORS: Record<string, string> = {
   js: "#f0db4f",
   express: "#65f057",
   mysql: "#fb8b23",
+  turso: "#2e6dff",
 };
