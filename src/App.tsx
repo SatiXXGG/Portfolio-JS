@@ -112,7 +112,7 @@ function App() {
         </section>
 
         <h3 className="text-2xl font-bold text-left mb-2 text-purple-900">Skills</h3>
-        <section className="grid grid-cols-5 md:grid-cols-12 gap-x-10">
+        <section className="py-2 grid grid-cols-5 md:grid-cols-12 gap-x-10 mx-auto w-[20rem] ">
           {SVGS.Node} {SVGS.React} {SVGS.Tailwind} {SVGS.Html} {SVGS.JavaScript}
           {SVGS.TypeScript} {SVGS.MySQL} {SVGS.Express}
         </section>
