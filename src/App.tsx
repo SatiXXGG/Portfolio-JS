@@ -133,7 +133,7 @@ function App() {
 
         <Project
           title="Auth APP with data base and settings"
-          desc="App with email verification with a code or with a link. (MAY TAKE A WHILE TO LOAD)"
+          desc="App with email verification with a code or with a link. Uses JWT for authentication with a token and a refresh token"
           techs={["React", "Tailwind", "TS", "Turso", "Node", "Express"]}
           img={AuthApp}
           link="https://satixx-auth.vercel.app/login"
